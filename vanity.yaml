@@ -1,0 +1,5 @@
+host: go.pzk.dev
+
+paths:
+  /sarnrawrsaur:
+    repo: https://github.com/pkumar0508/sarnrawrsaur
