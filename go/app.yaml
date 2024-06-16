@@ -1,4 +1,5 @@
 runtime: python39
+service: go
 
 instance_class: F1
 
@@ -8,9 +9,9 @@ automatic_scaling:
 
 handlers:
 - url: /
-  static_files: public/index.html
-  upload: public/index.html
+  static_files: index.html
+  upload: index.html
 
 - url: /(.*)
-  static_files: public/\1
-  upload: public/(.*)
+  static_files: \1
+  upload: (.*)
