@@ -1,0 +1,8 @@
+dispatch:
+  # Serve go vanity urls
+  - url: "go.pzk.dev/*"
+    service: go
+
+  # Otherwise, use .
+  - url: "pzk.dev/*"
+    service: default
